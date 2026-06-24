@@ -1,0 +1,161 @@
+/* ==========================================================================
+   ESTILOS GENERALES (Reset básico)
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* ==========================================================================
+   ESTRUCTURA DEL HERO (Sección Principal)
+   ========================================================================== */
+.hero-section {
+    min-height: 100vh; /* Ocupa el 100% del alto de la pantalla */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.hero-container {
+    max-width: 800px; /* Evita que el texto se estire demasiado en monitores */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem; /* Separación interna entre título, subtítulo y botón */
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+}
+
+/* ==========================================================================
+   ESTRUCTURA DE SERVICIOS
+   ========================================================================== */
+.services-section {
+    padding: 5rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto; /* Centra la sección en monitores grandes */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -0.02em;
+}
+
+/* Grilla inteligente: se acomoda sola según el tamaño de pantalla */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    width: 100%;
+}
+
+/* ==========================================================================
+   ESTRUCTURA DEL PORTFOLIO
+   ========================================================================== */
+.portfolio-section {
+    padding: 5rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.portfolio-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    width: 100%;
+}
+
+/* ==========================================================================
+   ESTRUCTURA DEL PROCESO
+   ========================================================================== */
+.process-section {
+    padding: 5rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.process-timeline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    width: 100%;
+}
+
+/* ==========================================================================
+   ESTRUCTURA DEL FOOTER
+   ========================================================================== */
+.main-footer {
+    background-color: #0b111e; /* Un tono apenas más oscuro para marcar el final */
+    padding: 5rem 2rem 2rem 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.footer-cta {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    max-width: 600px;
+}
+
+.footer-cta h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.footer-cta p {
+    color: var(--text-secondary);
+    font-size: 1.125rem;
+}
