@@ -34,19 +34,14 @@ body {
 }
 
 .landing-hero h1 {
-    font-size: 1.6rem;
-    font-weight: 800;
-    line-height: 1.2;
-    margin-bottom: 12px;
-    color: #ffffff;
+    font-size: 1.15rem; /* De 1.6rem a 1.15rem */
+    margin-bottom: 8px;
 }
 
 .landing-hero p {
-    font-size: 0.85rem;
-    color: #94a3b8;
-    max-width: 500px;
-    margin: 0 auto 25px auto;
+    font-size: 0.75rem; /* De 0.85rem a 0.75rem */
 }
+
 
 /* Caja del formulario de conversión */
 .lead-form-box {
@@ -60,10 +55,9 @@ body {
 }
 
 .lead-form-box h3 {
-    font-size: 1rem;
-    margin-bottom: 15px;
-    font-weight: 700;
+    font-size: 0.85rem;
 }
+
 
 .lead-form-box form {
     display: flex;
@@ -88,16 +82,10 @@ body {
 }
 
 .btn-action {
-    background: #3b82f6;
-    color: #ffffff;
-    border: none;
-    padding: 14px;
-    border-radius: 6px;
-    font-weight: 700;
-    font-size: 0.95rem;
-    cursor: pointer;
-    transition: background 0.2s;
+    padding: 10px;
+    font-size: 0.8rem;
 }
+
 
 .btn-action:hover {
     background: #2563eb;
@@ -141,8 +129,7 @@ body {
 }
 
 .landing-cta-bottom h2 {
-    font-size: 1.3rem;
-    margin-bottom: 10px;
+    font-size: 1.1rem;
 }
 
 .landing-cta-bottom p {

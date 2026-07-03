@@ -22,35 +22,22 @@ body {
 
 /* Navbar */
 .corp-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 25px;
-    background: #ffffff;
-    border-bottom: 1px solid #e2e8f0;
+    padding: 10px 15px;
 }
 
 .logo {
-    font-weight: 700;
-    font-size: 1.1rem;
-    color: var(--primary);
+    font-size: 0.9rem;
 }
 
 .accent-text { color: var(--accent); }
 
 .nav-links a {
-    text-decoration: none;
-    color: var(--text-muted);
-    font-size: 0.9rem;
-    font-weight: 500;
-    margin-left: 15px;
+    font-size: 0.75rem;
+    margin-left: 8px;
 }
 
 .btn-nav-cta {
-    background: var(--accent);
-    color: #ffffff !important;
-    padding: 6px 12px;
-    border-radius: 4px;
+    padding: 4px 8px;
 }
 
 /* Hero */
@@ -72,17 +59,11 @@ body {
 }
 
 .corp-hero h1 {
-    font-size: 1.75rem;
-    margin: 15px 0;
-    font-weight: 700;
-    line-height: 1.2;
+    font-size: 1.15rem; /* De 1.75rem a 1.15rem */
 }
 
 .corp-hero p {
-    color: #94a3b8;
-    font-size: 0.95rem;
-    max-width: 600px;
-    margin: 0 auto 25px auto;
+    font-size: 0.75rem;
 }
 
 .hero-actions {
@@ -131,7 +112,9 @@ body {
     text-align: center;
 }
 
-.corp-services h2 { font-size: 1.4rem; color: var(--primary); }
+.corp-services h2 {
+    font-size: 1.1rem;
+}
 .section-subtitle { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 30px; }
 
 .corp-grid {

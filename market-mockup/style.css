@@ -13,15 +13,11 @@ body {
 
 /* HEADER */
 .store-header {
-    background-color: #ffffff;
-    padding: 1.5rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #e2e8f0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    padding: 10px 15px;
+}
+
+.store-header .logo {
+    font-size: 0.95rem;
 }
 
 .logo {
@@ -44,13 +40,16 @@ body {
 }
 
 .store-hero h1 {
-    font-size: 2.25rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.3rem; /* Reducilo para que entre cómodo en un par de líneas */
+    margin-bottom: 6px;
 }
 
 .store-hero p {
-    color: #94a3b8;
-    font-size: 1rem;
+    font-size: 0.75rem;
+}
+
+.store-header {
+    padding: 10px 15px;
 }
 
 /* GRID DE PRODUCTOS */
