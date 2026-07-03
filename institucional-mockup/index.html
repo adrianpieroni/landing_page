@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultoría & Estrategia | Demo Institucional</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="corp-nav">
+        <div class="logo">S&M <span class="accent-text">Asociados</span></div>
+        <div class="nav-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto" class="btn-nav-cta">Agendar Turno</a>
+        </div>
+    </nav>
+
+    <section id="inicio" class="corp-hero">
+        <div class="hero-content">
+            <span class="badge">Estudio Profesional</span>
+            <h1>Soluciones legales y contables para hacer crecer tu empresa</h1>
+            <p>Acompañamos el desarrollo de tu negocio con un equipo de expertos dedicados a proteger y optimizar tus activos.</p>
+            <div class="hero-actions">
+                <a href="#contacto" class="btn-corp-primary">Consultar ahora</a>
+                <a href="#servicios" class="btn-corp-secondary">Nuestros Servicios</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="corp-stats">
+        <div class="stat-item">
+            <h3>+15</h3>
+            <p>Años de Trayectoria</p>
+        </div>
+        <div class="stat-item">
+            <h3>98%</h3>
+            <p>Casos de Éxito</p>
+        </div>
+        <div class="stat-item">
+            <h3>500+</h3>
+            <p>Empresas Asesoradas</p>
+        </div>
+    </section>
+
+    <section id="servicios" class="corp-services">
+        <h2>Áreas de Especialización</h2>
+        <p class="section-subtitle">Ofrecemos un enfoque integral para cubrir todas las necesidades de tu organización.</p>
+        
+        <div class="corp-grid">
+            <div class="corp-card">
+                <div class="card-icon">⚖️</div>
+                <h3>Asesoría Legal</h3>
+                <p>Protección contractual, derecho corporativo y resolución de litigios comerciales con la máxima rigurosidad.</p>
+            </div>
+            <div class="corp-card">
+                <div class="card-icon">📊</div>
+                <h3>Consultoría Fiscal</h3>
+                <p>Planificación de impuestos, auditorías y optimización de estructuras financieras para PyMEs y grandes empresas.</p>
+            </div>
+            <div class="corp-card">
+                <div class="card-icon">🤝</div>
+                <h3>Defensa Patrimonial</h3>
+                <p>Estrategias personalizadas para el resguardo y la transición ordenada de patrimonios familiares o corporativos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="corp-contact">
+        <div class="contact-container">
+            <h2>Solicitá una entrevista privada</h2>
+            <p>Completá el formulario y un especialista de nuestro bufete te contactará dentro de las próximas 24 horas hábiles.</p>
+            
+            <form onsubmit="event.preventDefault(); alert('¡Simulación de envío de formulario institucional exitosa!');">
+                <div class="form-group">
+                    <input type="text" placeholder="Nombre completo" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Correo electrónico de contacto" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="¿En qué área requiere nuestro asesoramiento?" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Enviar Solicitud</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="corp-footer">
+        <p>&copy; 2026 S&M Asociados. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

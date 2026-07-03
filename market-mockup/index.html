@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Demo - Indumentaria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Encabezado de la Tienda -->
+    <header class="store-header">
+        <div class="logo">URBAN SKILLS</div>
+        <div class="cart-icon">🛒 <span id="cart-count">0</span></div>
+    </header>
+
+    <!-- Banner Principal -->
+    <section class="store-hero">
+        <h1>Nueva Colección de Invierno</h1>
+        <p>Envíos a todo el país y 3 cuotas sin interés.</p>
+    </section>
+
+    <!-- Grilla de Productos -->
+    <main class="products-grid">
+        <!-- Producto 1 -->
+        <div class="product-card">
+            <div class="product-image-placeholder">Campera Bomber Black</div>
+            <div class="product-info">
+                <h3>Campera Bomber Black</h3>
+                <p class="price">$45.000</p>
+                <button class="btn-add" onclick="agregarAlCarrito()">Agregar al carrito</button>
+            </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="product-card">
+            <div class="product-image-placeholder">Canguro Oversize Grey</div>
+            <div class="product-info">
+                <h3>Canguro Oversize Grey</h3>
+                <p class="price">$32.000</p>
+                <button class="btn-add" onclick="agregarAlCarrito()">Agregar al carrito</button>
+            </div>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="product-card">
+            <div class="product-image-placeholder">Pantalón Cargo Olive</div>
+            <div class="product-info">
+                <h3>Pantalón Cargo Olive</h3>
+                <p class="price">$38.000</p>
+                <button class="btn-add" onclick="agregarAlCarrito()">Agregar al carrito</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Un toque de JS interactivo rápido -->
+    <script>
+        let contador = 0;
+        function agregarAlCarrito() {
+            contador++;
+            document.getElementById('cart-count').innerText = contador;
+        }
+    </script>
+</body>
+</html>

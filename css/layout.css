@@ -96,13 +96,34 @@ body {
     gap: 0.5rem;
 }
 
+/* Grilla de proyectos: Obliga a mantener las 3 tarjetas en la misma línea en PC */
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2.5rem;
+    grid-template-columns: repeat(3, 1fr); /* Crea exactamente 3 columnas iguales */
+    gap: 25px; /* Espacio entre las tarjetas */
     width: 100%;
+    box-sizing: border-box;
 }
 
+/* Evitamos que las tarjetas colapsen de forma extraña si hay mucho texto */
+.portfolio-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Hace que las tres tengan exactamente la misma altura */
+}
+
+/* RESPONSIVE: En celulares y pantallas chicas sí las bajamos para que se lean bien */
+@media (max-width: 992px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablets */
+    }
+}
+
+@media (max-width: 600px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr; /* 1 columna en celulares */
+    }
+}
 /* ==========================================================================
    ESTRUCTURA DEL PROCESO
    ========================================================================== */
@@ -158,4 +179,18 @@ body {
 .footer-cta p {
     color: var(--text-secondary);
     font-size: 1.125rem;
+}
+
+.hero-section {
+    position: relative;
+    /* Recordá que desde la carpeta CSS tenés que salir con '../' para ir a assets */
+    background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.95)), 
+                url('../assets/icons/images/hero-bg.webp') no-repeat center center/cover;
+    padding: 100px 0;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 80vh; /* Ocupa el 80% de la pantalla del celular o PC */
 }

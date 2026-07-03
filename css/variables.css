@@ -4,3 +4,19 @@
     --text-secondary: #94a3b8;
     --accent-color: #10b981; /* Verde WhatsApp Pro */
 }
+
+:root {
+    --fuente-titulos: 'Plus Jakarta Sans', sans-serif;
+    --color-primario: #007bff; /* Tu azul */
+    --color-oscuro: #1a1a1a;   /* Tu negro */
+}
+
+:root {
+    /* Tipografía */
+    --font-main: 'Plus Jakarta Sans', sans-serif;
+
+    /* Paleta de Colores (Negro y Azul premium) */
+    --color-principal: #0f172a; /* Un negro/azulino muy corporativo y profundo */
+    --color-acento: #2563eb;    /* Un azul eléctrico moderno que resalta */
+    --color-fondo: #ffffff;
+}

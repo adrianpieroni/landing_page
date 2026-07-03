@@ -204,3 +204,366 @@
         text-align: center;
     }
 }
+
+/* --- BARRA DE NAVEGACIÓN --- */
+.main-navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff; /* Cambialo por tu color de fondo si usás modo oscuro */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Asegura que quede por encima de todo al scrollear */
+    padding: 15px 0;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos del Logo */
+.navbar-logo {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #1a1a1a; /* Color principal del texto */
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.5px;
+}
+
+/* Si usás imagen para el logo */
+.navbar-logo img {
+    max-height: 40px; /* Ajusta el alto de tu logo */
+    width: auto;
+}
+
+/* Si usás texto con detalle de color */
+.logo-highlight {
+    color: #007bff; /* Usá acá el color acento de tus variables CSS (ej: var(--primary-color)) */
+    margin-left: 4px;
+}
+
+/* --- AJUSTE PARA EL HERO --- */
+/* Como la barra ahora es fija (sticky), es buena idea asegurarte de que el hero 
+   tenga una transición limpia justo debajo de ella */
+.hero-section {
+    padding-top: 80px; /* Evita que el contenido del hero se pegue demasiado a la barra */
+}
+
+.navbar-logo {
+    font-family: var(--fuente-titulos);
+    font-weight: 800; /* Bien grueso para APex */
+    color: var(--color-oscuro);
+}
+
+.logo-highlight {
+    font-weight: 400; /* Más fino para Digital */
+    color: var(--color-primario);
+}
+
+.main-navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-fondo);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+    padding: 18px 0;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    font-family: var(--font-main);
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 800; /* Peso bien grueso para "APex" */
+    color: var(--color-principal);
+    letter-spacing: -0.5px;
+}
+
+.logo-highlight {
+    font-weight: 400; /* Peso más liviano para "Digital" */
+    color: var(--color-acento);
+    margin-left: 4px;
+}.main-navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-fondo);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+    padding: 18px 0;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    font-family: var(--font-main);
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 800; /* Peso bien grueso para "APex" */
+    color: var(--color-principal);
+    letter-spacing: -0.5px;
+}
+
+.logo-highlight {
+    font-weight: 400; /* Peso más liviano para "Digital" */
+    color: var(--color-acento);
+    margin-left: 4px;
+}
+
+.main-navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-fondo);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+    padding: 18px 0;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    font-family: var(--font-main);
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 800; /* Peso bien grueso para "APex" */
+    color: var(--color-principal);
+    letter-spacing: -0.5px;
+}
+
+.logo-highlight {
+    font-weight: 400; /* Peso más liviano para "Digital" */
+    color: var(--color-acento);
+    margin-left: 4px;
+}
+
+/* ==========================================================================
+   MODAL INTERACTIVO DE VISTA PREVIA (3 VISUALIZACIONES)
+   ========================================================================== */
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(10, 17, 31, 0.9);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.modal-container {
+    width: 100%;
+    max-width: 1200px;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.modal-header {
+    background: #1e293b;
+    padding: 14px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.view-controls {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-view {
+    background: #334155;
+    color: #94a3b8;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.btn-view.active {
+    background: #10b981;
+    color: #ffffff;
+}
+
+.btn-view:hover:not(.active) {
+    background: #475569;
+    color: #f8fafc;
+}
+
+.close-modal {
+    background: transparent;
+    color: #94a3b8;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.close-modal:hover {
+    color: #f1f5f9;
+}
+
+.iframe-wrapper {
+    background: #ffffff;
+    margin: 0 auto;
+    width: 100%;
+    flex-grow: 1;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    overflow: hidden;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.06);
+}
+
+.iframe-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Modificadores de tamaño simulando dispositivos */
+.desktop-view { width: 100%; }
+.tablet-view { width: 768px; max-width: 100%; }
+.mobile-view { width: 375px; max-width: 100%; }
+
+/* Estilo para los enlaces de "Ver maqueta" */
+.portfolio-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #10b981;
+    text-decoration: none;
+    font-weight: 600;
+    transition: opacity 0.2s;
+}
+
+.portfolio-link:hover {
+    text-decoration: underline;
+    opacity: 0.9;
+}
+
+/* ==========================================================================
+   PORTFOLIO INTERACTIVO (GRILLA EN VIVO)
+   ========================================================================== */
+.portfolio-grid-live {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    width: 100%;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+
+.live-card {
+    background: #1e293b;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+.card-device-header {
+    background: #0f172a;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #334155;
+}
+
+.card-project-title {
+    color: #94a3b8;
+    font-weight: 600;
+    font-size: 0.85rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.device-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.btn-device {
+    background: #1e293b;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+}
+
+.btn-device.active, .btn-device:hover {
+    background: #10b981;
+}
+
+.live-iframe-wrapper {
+    height: 450px;
+    margin: 0 auto;
+    width: 100%;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: #ffffff;
+}
+
+.live-iframe-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.desktop-mode { width: 100%; }
+.tablet-mode { width: 100%; max-width: 340px; }
+.mobile-mode { width: 100%; max-width: 240px; }
+
+@media (max-width: 1024px) {
+    .portfolio-grid-live {
+        grid-template-columns: 1fr;
+    }
+    .tablet-mode { max-width: 768px; }
+    .mobile-mode { max-width: 375px; }
+}
