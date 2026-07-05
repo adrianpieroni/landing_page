@@ -117,3 +117,10 @@ body {
 .btn-add:hover {
     background-color: #334155;
 }
+
+.product-image {
+    width: 100%;
+    height: 250px;     /* Ajustá el alto a tu gusto */
+    object-fit: cover; /* Esto evita que la imagen se estire o se rompa */
+    display: block;
+}

@@ -567,3 +567,31 @@
     .tablet-mode { max-width: 768px; }
     .mobile-mode { max-width: 375px; }
 }
+
+/* Estilo para el botón de WhatsApp en la barra de las tarjetas */
+.btn-top-whatsapp {
+    background-color: #25D366 !important; /* Verde institucional de WhatsApp */
+    color: #ffffff !important;           /* Texto blanco */
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: background-color 0.2s ease;
+    border: none;
+}
+
+/* Cambio de color sutil cuando pasan el mouse por encima */
+.btn-top-whatsapp:hover {
+    background-color: #128C7E !important; /* Verde más oscuro */
+    color: #ffffff !important;
+}
+
+/* Nos aseguramos de que el logo SVG se pinte de blanco */
+.btn-top-whatsapp svg {
+    fill: #ffffff !important;
+    color: #ffffff !important;
+}

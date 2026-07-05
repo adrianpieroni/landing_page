@@ -14,13 +14,21 @@
     <header class="landing-hero">
         <div class="overlay"></div>
         <div class="hero-container">
+            <!-- Nombre del local y logo agregado arriba de la insignia -->
+            <div class="brand-logo">
+                🏋️‍♂️ <span>PowerFit Gym</span>
+            </div>
+            
             <span class="promo-badge">🔥 ¡CUPOS LIMITADOS!</span>
             <h1>Entrená al máximo. Conseguí tu mejor versión.</h1>
             <p>Clases guiadas, ambiente motivador y planes a tu medida. Registrate hoy y obtené un **Pase Libre de 3 días sin cargo**.</p>
             
             <div class="lead-form-box">
                 <h3>Asegurá tu pase libre ahora</h3>
-                <form onsubmit="event.preventDefault(); alert('¡Simulación de registro en Landing Page exitosa! El código generaría un aviso automático al WhatsApp del dueño.');">
+                <form onsubmit="event.preventDefault(); 
+                    const nombre = this.querySelector('input[type=text]').value;
+                    const url = 'https://wa.me/tu_numero_de_tuenti?text=' + encodeURIComponent('¡Hola! Me interesa el Pase Libre de 3 días en Tu Nueva Versión. Mi nombre es ' + nombre);
+                    window.open(url, '_blank');">
                     <input type="text" placeholder="Tu Nombre" required>
                     <input type="tel" placeholder="Tu WhatsApp" required>
                     <button type="submit" class="btn-action">Quiero mis 3 días gratis 🚀</button>
