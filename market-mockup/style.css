@@ -124,3 +124,11 @@ body {
     object-fit: cover; /* Esto evita que la imagen se estire o se rompa */
     display: block;
 }
+
+/* Asegúrate de que todas las imágenes dentro de las cards respeten el contenedor */
+.product-card img {
+    width: 100%;       /* Fuerza a la imagen a medir el 100% del ancho del contenedor */
+    height: 250px;     /* Define una altura fija para el área de la imagen */
+    object-fit: cover; /* Recorta la imagen para que llene el espacio sin deformarse */
+    display: block;    /* Elimina espacios no deseados debajo de la imagen */
+}
