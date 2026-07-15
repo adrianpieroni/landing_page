@@ -253,9 +253,11 @@
 /* Como la barra ahora es fija (sticky), es buena idea asegurarte de que el hero 
    tenga una transición limpia justo debajo de ella */
 .hero-section {
-    padding-top: 80px; /* Evita que el contenido del hero se pegue demasiado a la barra */
+    padding-top: 80px;
+    background: radial-gradient(circle at 80% 20%, rgba(16, 185, 129, 0.1) 0%, transparent 50%), 
+                radial-gradient(circle at 20% 80%, rgba(59, 130, 246, 0.1) 0%, transparent 50%);
+    /* Esto le da una profundidad visual sutil sin que parezca un banner publicitario */
 }
-
 .navbar-logo {
     font-family: var(--fuente-titulos);
     font-weight: 800; /* Bien grueso para APex */
@@ -594,4 +596,107 @@
 .btn-top-whatsapp svg {
     fill: #ffffff !important;
     color: #ffffff !important;
+}
+
+/* ==========================================================================
+   COMPONENTES: SECCIÓN DE BENEFICIOS (NUEVA)
+   ========================================================================== */
+
+.benefits-section {
+    padding: 4rem 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+    padding: 0 20px;
+}
+
+.benefit-card {
+    background-color: #1e293b;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 2.5rem 2rem;
+    border-radius: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-acento);
+}
+
+.benefit-icon {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.benefit-card h3 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--color-principal);
+    margin: 0;
+}
+
+.benefit-card p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ==========================================================================
+   AJUSTE DE CONTRASTE Y LEGIBILIDAD
+   ========================================================================== */
+
+/* 1. Definimos un gris suave para los párrafos (esto evita que el blanco resalte demasiado) */
+.benefit-card p {
+    font-size: 0.95rem;
+    color: #cbd5e1; /* Un gris azulado claro, elegante y legible */
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* 2. Definimos un color para los títulos que sea claro pero no blanco puro */
+.benefit-card h3 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #f1f5f9; /* Un blanco suave (off-white) */
+    margin: 0;
+}
+
+/* 3. Aseguramos que el título de la sección se vea profesional */
+.section-title {
+    color: #f8fafc; /* Blanco suave */
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.benefit-icon {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    opacity: 0.85; /* Esto los hace un poco más tenues y elegantes */
+}
+
+.hero-authority {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    opacity: 0.7;
+}
+
+.hero-authority strong {
+    color: var(--color-acento);
+    font-weight: 600;
 }

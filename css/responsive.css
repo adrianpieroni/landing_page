@@ -1,0 +1,19 @@
+/* ==========================================================================
+   AJUSTE RESPONSIVE: SECCIÓN BENEFICIOS
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    .benefits-grid {
+        grid-template-columns: 1fr; /* Una sola columna para que las tarjetas ocupen todo el ancho */
+        gap: 1.5rem; /* Menos espacio entre tarjetas en móvil */
+        padding: 0 15px; /* Margen lateral para que no toquen el borde de la pantalla */
+    }
+
+    .benefit-card {
+        padding: 2rem 1.5rem; /* Un poco menos de padding interno para aprovechar mejor el espacio */
+    }
+
+    .benefit-icon {
+        font-size: 2.5rem; /* Iconos un poco más chicos en móvil para no agobiar */
+    }
+}
